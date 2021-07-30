@@ -8,12 +8,12 @@ app = Flask(__name__)
 
 model = joblib.load('dib_79.pkl')
 
-@app.route('/')
-def welcome():
-    return 'welcome'
+#@app.route('/')
+#def welcome():
+#    return 'welcome'
  
 
-@app.route('/home')
+@app.route('/')
 def home_page():
     return render_template('home.html')
 
