@@ -30,7 +30,7 @@ def contact():
     h = request.form.get('age')
 
 
-    pred = model.predict([[int(a),int(b),int(c),int(d),int(e),int(f),int(g),h]])
+    pred = model.predict([[int(a),int(b),int(c),int(d),int(e),float(f),float(g),h]])
 
     if pred[0] == 1:
             output = 'diabatic'
